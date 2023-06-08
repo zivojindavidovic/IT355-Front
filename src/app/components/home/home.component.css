@@ -1,0 +1,16 @@
+.destination-image{
+    height: 250px;
+    width: 400px;
+    transition: transform ease 0.2s;
+    border-radius: 5px;
+}
+
+.destination-image:hover{
+    transform: scale(1.1);
+}
+
+.title{
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: white;
+}

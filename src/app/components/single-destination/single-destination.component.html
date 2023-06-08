@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <h3>Destination: {{destination.destination}}</h3>
+            <img src="{{destination.image}}" style="width: 50%;" class="mt-5" alt="Image is not loading">
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <div class="col-md-12">
+                <div class="card card-container" *ngIf="roles == 'ROLE_ADMIN'">
+                    <form [formGroup]="editDestinationForm" (ngSubmit)="edit(destination.id)">
+                        <div class="form-group">
+                            <label for="destination">Destination</label>
+                            <input type="text" class="form-control" formControlName="destinationName" placeholder="{{destination.destination}}" name="destination"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="image">Image</label>
+                            <input type="text" class="form-control" formControlName="destinationImage" placeholder="{{destination.image}}" name="image"/>
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-primary btn-block" type="submit">
+                                Edit
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

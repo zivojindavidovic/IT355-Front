@@ -1,0 +1,95 @@
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2{
+    color: white;
+    font-weight: bold;
+    font-size: 72px;
+    letter-spacing: 5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.animated{
+    height: 100vh;
+    text-align: center;
+}
+
+.animated .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.animated .content .element{
+    width: 50%;
+    transition: all 1s ease;
+    opacity: 0;
+}
+
+.animated .content img.slideFromLeft{
+    transform: translateX(-50%);
+}
+
+.animated .content p.slideFromRight{
+    transform: translateX(50%);
+}
+
+
+.animated .content img.animate{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.animated .content p.animate{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+p{
+    padding: 100px;
+    max-width: 80%;
+    text-align: center;
+    color: white;
+}
+
+.animated2{
+    height: 100vh;
+    text-align: center;
+}
+
+.animated2 .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.animated2 .content .element{
+    width: 50%;
+    transition: all 1s ease;
+    opacity: 0;
+}
+
+
+.animated2 .content img.slideFromRight{
+    transform: translateX(50%);
+}
+
+
+.animated2 .content p.slideFromLeft{
+    transform: translateX(-50%);
+}
+
+.animated2 .content img.animate{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.animated2 .content p.animate{
+    transform: translateX(0);
+    opacity: 1;
+}

@@ -1,0 +1,15 @@
+<div class="container">
+    <form action="" class="d-block mx-auto mt-5" [formGroup]="createDestinationForm" (ngSubmit)="submitForm()">
+        <div class="form-group">
+            <label for="type">Destination</label>
+            <input type="text" class="form-control" formControlName="destinationName">
+        </div>
+        <div class="form-group">
+            <label for="type">Image</label>
+            <input type="text" class="form-control" formControlName="destinationImage">
+        </div>
+        <div class="col button-holder d-flex justify-content-center align-item-center mt-4">
+            <button class="btn btn-success" type="submit" name="submit">Create New Destination</button>
+        </div>
+    </form>
+</div>

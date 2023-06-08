@@ -1,0 +1,11 @@
+<div class="container text-center mt-5">
+  <div class="row row-cols-3">
+    <div class="col" *ngFor="let destination of destinations">
+      <h3 class="title my-3">Destination: {{destination.destination}}</h3>
+      <a [routerLink]="['/home', destination.id]"><img src="{{destination.image}}" class="destination-image" alt="Error loading image"></a>
+      <div *ngIf="roles == 'ROLE_ADMIN'">
+        <button (click)="deleteDestination(destination.id)" class="btn btn-danger my-3">Delete</button>
+      </div>
+    </div>
+  </div>
+</div>
